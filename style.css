@@ -1,0 +1,144 @@
+body{
+    background-image: linear-gradient(to bottom right, rgb(0, 106, 228), rgb(2, 2, 0)); 
+    height: 2000px;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+
+}
+/* section{
+    background-image: linear-gradient(to bottom right, red, yellow); 
+} */
+
+.boton{
+    width: 70px;
+    border-radius: 100px;
+    border-color:white;
+    background-color: black;
+}
+
+.wala{
+    border-radius: 255px;
+}
+
+.tix{
+    animation: typewriter 4s steps(44) 1s 1 normal both,
+               blinkTextCursor 500ms steps(44) infinite normal;
+  }
+  @keyframes typewriter{
+    from{width: 0;}
+    to{width: 24em;}
+  }
+  @keyframes blinkTextCursor{
+    from{border-right-color: rgba(255,255,255,.75);}
+    to{border-right-color: transparent;}
+  }
+
+.typewrite{
+    color: white;
+    font-family: 'Montserrat';
+    font-weight: bolder;
+    border-color: black;
+}
+
+.typo{
+    color: rgb(255, 212, 20);
+    font-family: 'Montserrat';
+    font-weight: lighter;
+    font-size: 30px;
+    border-color: black;
+    font-weight: lighter;
+}
+
+.gab{
+    background: #ffffff;
+    width: 30px;
+    height: 40px;
+    border-radius: 40px;
+    color: rgb(8, 8, 134);
+    border: 10px black;
+    border-width: 20px;
+}
+.gab1{
+    background: #ffffff;
+    width: 30px;
+    height: 40px;
+    border-radius: 20px;
+    height: 40px;
+    color: rgb(9, 157, 255);
+    margin-left: 20px;
+}
+
+.gab2{
+    background: #ffffff;
+    width: 30px;
+    height: 40px;
+    border-radius: 25px;
+    height: 40px;
+    color: rgb(5, 131, 26);
+    margin-left: 20px;
+}
+.gab3{
+    background: #ffffff;
+    width: 30px;
+    height: 40px;
+    border-radius: 20px;
+    height: 40px;
+    color: rgb(133, 29, 29);
+    margin-left: 20px;
+}
+
+.slide-right {
+    width: 100%;
+    font-family: 'roboto';
+    font-weight: lighter;
+    color: rgb(253, 253, 253);
+    font-size: 10px;
+    
+
+  }
+  
+  .slide-right h2 {
+    animation: 3s slide-right;
+    animation-delay: 0s;
+  }
+  
+  @keyframes slide-right {
+    from {
+      margin-top: -100%;
+    }
+  
+    to {
+      margin-top: 5%;
+    }
+  }
+
+  .slide-right1 {
+    width: 100%;
+    font-family: 'roboto';
+    font-weight: lighter;
+    color: black;
+    font-size: 10px;
+    
+
+  }
+  
+  .slide-right1 h2 {
+    animation: 3s slide-right;
+    animation-delay: 0s;
+  }
+  
+  @keyframes slide-right {
+    from {
+      margin-bottom: -100%;
+    }
+  
+    to {
+      margin-bottom: 5%;
+    }
+  }
+
+.kard{
+    border-radius: 45px;
+}
+
