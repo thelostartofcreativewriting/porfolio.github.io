@@ -1,0 +1,352 @@
+<!-- 
+  // require('read.php');
+// ?> -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Oswald:wght@500&family=Titillium+Web:wght@900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Titillium+Web:wght@900&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="js.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <title>FINDING THE LOST ART OF CREATIVE WRITING</title>
+  </head>
+  <header>
+      <!-- <h3 class="text-center">FINDING THE LOST ART OF CREATIVE WRITING</h3> -->
+  </header>
+  <body style=" background-image: url('hats.png'); height: auto;
+  ">
+  <script>
+    $(document).ready(function(){
+        $("#myModal1").modal('show');
+    });
+
+    $(document).ready(function(){
+        $("#myModal").modal('show');
+    });
+
+    // (B) GET AUDIO TAG + DEFINE PLAYLIST
+let audio = document.getElementById("bgm"),
+    playlist = ["Mozart's The Marriage Of Figaro (Overture), K. 492 - WOLFGANG AMADEUS MOZART #music #classical.mp3", "2.mp3"],
+    current = 0;
+ 
+// (C) AUTO LOAD NEXT SONG
+audio.onended = () => {
+  current++;
+  if (current >= playlist.length) { current = 0; }
+  audio.src = playlist[current];
+  audio.pause();
+  audio.load();
+  audio.play();
+};
+</script>
+<style>
+    .boton1 {
+      border-radius: 55%;
+      width: auto;
+      height: auto;
+      padding: 15px 25px;
+      font-size: 25px;
+      text-align: center;
+      cursor: pointer;
+      outline: none;
+      color: #fff;
+      background-color: #c98860;
+      border: none;
+      border-radius: 15px;
+      box-shadow: 0 9px rgb(0, 0, 0);
+      font-family: Bungee;
+    }
+    
+    .boton1:hover {background-color: #60a3e9}
+    
+    .boton1:active {
+      background-color: #6a6eb7;
+      box-shadow: 0 5px rgb(0, 0, 0);
+      transform: translateY(4px);
+    }
+
+    .boton2 {
+      border-radius: 55%;
+      width: auto;
+      height: auto;
+      padding: 15px 25px;
+      font-size: 25px;
+      text-align: center;
+      cursor: pointer;
+      outline: none;
+      color: #fff;
+      background-color: #c98860;
+      border: none;
+      border-radius: 15px;
+      box-shadow: 0 9px rgb(0, 0, 0);
+      font-family: Bungee;
+    }
+    
+    .boton2:hover {background-color: #60a3e9}
+    
+    .boton2:active {
+      background-color: #6a6eb7;
+      box-shadow: 0 5px rgb(0, 0, 0);
+      transform: translateY(4px);
+    }
+
+    .boton3 {
+  border-radius: 55%;
+  width: auto;
+  height: auto;
+  padding: 15px 25px;
+  font-size: 25px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #c98860;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px rgb(0, 0, 0);
+  font-family: Bungee;
+}
+
+.boton3:hover {background-color: #60a3e9}
+
+.boton3:active {
+  background-color: #6a6eb7;
+  box-shadow: 0 5px rgb(0, 0, 0);
+  transform: translateY(4px);
+}
+.boton5{
+  border-radius: 55%;
+  width: auto;
+  height: auto;
+  padding: 15px 25px;
+  font-size: 25px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #c98860;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px rgb(0, 0, 0);
+  font-family: Bungee;
+}
+
+.boton5:hover {background-color: #60a3e9}
+
+.boton5:active {
+  background-color: #6a6eb7;
+  box-shadow: 0 5px rgb(0, 0, 0);
+  transform: translateY(4px);
+
+  
+}
+
+.baseBlock {
+	margin: 0px 0px 35px 0px;
+	padding: 0 0 15px 0px;
+	border-radius: 5px;
+	overflow: hidden;
+	min-height: 390px;
+	background: #f3e3d3;
+	-moz-transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+	-o-transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+	transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+  font-family: 'Bungee';
+}
+
+.baseBlock:hover {
+	-webkit-transform: translate(0, -25px);
+	-moz-transform: translate(0, -25x);
+	-ms-transform: translate(0, -25px);
+	-o-transform: translate(0, -25px);
+	transform: translate(0, -25px);
+	box-shadow: 0 50px 50px rgba(0, 0, 0, 0.2);
+}
+
+.flier {
+	pointer-events: none;
+}
+
+.flier > * {
+/* Adjust animation duration to change the element’s speed */
+        animation: fly 50s linear infinite;
+        pointer-events: none !important;
+	top: 0;
+	left: 0;
+	transform: translateX(-120%) translateY(-120%) rotateZ(0);
+	position: fixed;
+	animation-delay: 1s;
+	z-index: 999999;
+}
+
+ /* Keyframe values control where the element will begin
+    and end its trajectory across the screen. Each rule
+    represents a path the element follows across the screen. */
+
+
+@keyframes fly {
+
+	98.001%, 0% {
+                display: block;
+		transform: translateX(-200%) translateY(100vh) rotateZ(0deg)
+	}
+
+	70% {
+		transform: translateX(100vw) translateY(-100%) rotateZ(180deg)
+	}
+
+	75.001%, 18% {
+		transform: translateX(100vw) translateY(-30%) rotateZ(0deg)
+	}
+
+	80% {
+		transform: translateX(-200%) translateY(3vh) rotateZ(-180deg)
+	}
+
+	90.001%, 43% {
+		transform: translateX(-200%) translateY(-100%) rotateZ(-180deg)
+	}
+
+	105% {
+		transform: translateX(100vw) translateY(50vh) rotateZ(0deg)
+	}
+
+	110.001%, 68% {
+		transform: translateX(20vw) translateY(-200%) rotateZ(180deg)
+	}
+
+	115% {
+		transform: translateX(10vw) translateY(100vh) rotateZ(0deg)
+	}
+}
+
+    
+    </style>
+<div id="myModal1" class="modal fade">
+  <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel" style="font-family: 'Bungee';"><i class="fa fa-map-marker" aria-hidden="true" style="color: #ffd500;"></i> Literature room</h5>
+              <!-- <img src="Edisonguider-removebg-preview.png" alt="..." class="rounded"> -->
+              <!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
+          </div>
+          <div class="modal-body">
+              <h4 class="text-center" style="color: #172321; font-weight: bolder; font-family: Bungee;">Welcome to the literature room!</h4>
+              <p style="color: #c98860; font-family: Bungee;">ADD TEXT ADD TEXT ADD TEXT ADD TEXT ADD TEXT.</p>
+              <a class="btn close text-muted" data-dismiss="modal" style="font-family: Bungee;">Continue</a>
+            </div>
+      </div>
+  </div>
+</div>
+</audio>
+  <div id="myModal" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel" style="font-family: 'Bungee';"><i class="fa fa-map-marker" aria-hidden="true" style="color: #ffd500;"></i> Literature room</h5>
+                <!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
+            </div>
+            <div class="modal-body">
+                <h4 class="text-center" style="color: #172321; font-weight: bolder; font-family: Bungee;">Welcome to the literature room!.</h4>
+                <p style="color: #c98860; font-family: Bungee;">ADD DESCRIPTION ADD DESCRIPTION ADD DESCRIPTION ADD DESCRIPTION ADD DESCRIPTION.</p>
+                <a class="btn close text-muted" data-dismiss="modal" style="font-family: Bungee;">Continue</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="flier">
+    <a href="" style="font-family: 'Bungee'; color: #c98860;">
+        <i class="fa fa-map-marker" aria-hidden="true" style="color: #ffd500;"></i>  Literature room
+   </a>
+  </div>
+
+      <section class="mt-4 py-5 mb-5">
+          <div class="container">
+              <div class="row">
+                <audio src="Mozart's The Marriage Of Figaro (Overture), K. 492 - WOLFGANG AMADEUS MOZART #music #classical.mp3" id="bgm" autoplay></audio>
+                <embed src="Mozart's The Marriage Of Figaro (Overture), K. 492 - WOLFGANG AMADEUS MOZART #music #classical.mp3" loop="true" autostart="true" width="2" height="0">
+                  <div class="col-sm-6 col-lg-12">
+                      <div class="col text-center d-flex justify-content-center">                 
+                        <a href="lobby2.html" class="btn text-center boton1 btn-default" style="float: left; margin-right: 5px;"><i class="fa fa-angle-double-left"></i>PREVIOUS ROOM</a>
+                        <a href="2nd.html" class="btn text-center boton2 btn-default" style="float: right;">NEXT ROOM<i class="fa fa-angle-double-right"></i></a>
+                      </div>
+                      <div class="row">
+                        <!-- <div class="col-sm-6 col-lg-12">
+                          <div class="col text-end d-flex justify-content-end">
+                            <a href="first.html" class="btn text-center boton3 btn-default" style="margin-bottom: 15px;">CLICK HERE</a>
+                          </div>
+                      </div>
+                      <div class="col-sm-6 col-lg-12">
+                          <div class="col text-end d-flex justify-content-start">
+                            <a href="first.html" class="btn text-center boton5 btn-default">CLICK HERE</a>
+                          </div>
+                      </div> -->
+                      <audio>
+                        <embed src="moz.wav" loop="true" autostart="true" type="audio/mpeg/mp3/wav" width="0" height="0">
+                      </audio>
+                      <div class="container mt-5">
+                        <div class="row">
+                         <div class="col-md-4">
+                          <div class="card baseBlock">
+                         <img class="card-img-top" data-src="holder.js/100px180/" alt="100%x180" style="height: 180px; width: 100%; display: block;" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22318%22%20height%3D%22180%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20318%20180%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_15fb4f80579%20text%20%7B%20fill%3Argba(255%2C255%2C255%2C.75)%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A16pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_15fb4f80579%22%3E%3Crect%20width%3D%22318%22%20height%3D%22180%22%20fill%3D%22%23777%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22118.0859375%22%20y%3D%2297.35%22%3E318x180%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true">
+                         <div class="card-body">
+                           <h4 class="card-title" style="color: #8e5431;"> Title</h4>
+                           <p class="card-text">ADD TEXT HERE ADD TEXT HERE ADD TEXT HERE ADD TEXT HERE ADD TEXT HERE ADD TEXT HERE ADD TEXT HERE ADD TEXT HERE ADD TEXT HERE ADD TEXT HERE ADD TEXT HERE.</p>
+                           <a href="#" class="btn boton5">View image</a>
+                         </div>
+                       </div>
+                         </div>
+
+                         <div class="col-md-4">
+                          <div class="card baseBlock">
+                         <img class="card-img-top" data-src="holder.js/100px180/" alt="100%x180" style="height: 180px; width: 100%; display: block;" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22318%22%20height%3D%22180%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20318%20180%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_15fb4f80579%20text%20%7B%20fill%3Argba(255%2C255%2C255%2C.75)%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A16pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_15fb4f80579%22%3E%3Crect%20width%3D%22318%22%20height%3D%22180%22%20fill%3D%22%23777%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22118.0859375%22%20y%3D%2297.35%22%3E318x180%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true">
+                         <div class="card-body">
+                           <h4 class="card-title" style="color: #8e5431;"> Title</h4>
+                           <p class="card-text">ADD TEXT HERE ADD TEXT HERE ADD TEXT HERE ADD TEXT HERE ADD TEXT HERE ADD TEXT HERE ADD TEXT HERE ADD TEXT HERE ADD TEXT HERE ADD TEXT HERE ADD TEXT HERE.</p>
+                           <a href="#" class="btn boton5">View image</a>
+                         </div>
+                       </div>
+                         </div>
+
+                         <div class="col-md-4">
+                          <div class="card baseBlock">
+                         <img class="card-img-top" data-src="holder.js/100px180/" alt="100%x180" style="height: 180px; width: 100%; display: block;" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22318%22%20height%3D%22180%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20318%20180%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_15fb4f80579%20text%20%7B%20fill%3Argba(255%2C255%2C255%2C.75)%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A16pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_15fb4f80579%22%3E%3Crect%20width%3D%22318%22%20height%3D%22180%22%20fill%3D%22%23777%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22118.0859375%22%20y%3D%2297.35%22%3E318x180%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true">
+                         <div class="card-body">
+                           <h4 class="card-title" style="color: #8e5431;"> Title</h4>
+                           <p class="card-text">ADD TEXT HERE ADD TEXT HERE ADD TEXT HERE ADD TEXT HERE ADD TEXT HERE ADD TEXT HERE ADD TEXT HERE ADD TEXT HERE ADD TEXT HERE ADD TEXT HERE ADD TEXT HERE.</p>
+                           <a href="#" class="btn boton5">View image</a>
+                         </div>
+                       </div>
+                         </div>
+                        </div>
+                       </div>
+                    </div>
+                  </div>
+              </div>
+              
+          </div>
+      </section> 
+  </body>
+</html>
+
+
+               

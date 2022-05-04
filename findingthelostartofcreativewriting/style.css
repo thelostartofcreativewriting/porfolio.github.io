@@ -1,0 +1,20 @@
+body{
+    
+    background-image: url('BG2.png');
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-attachment: fixed;
+
+}
+
+.bg-image{
+    height: 100vh;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+}
+
+#section{
+    background-image: url('BG2.png');
+}
